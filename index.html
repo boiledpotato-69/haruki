@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Will You Give Us Another Chance?</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #f9a8d4, #fad0c4);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .container {
+            text-align: center;
+            background: #fff;
+            padding: 20px 40px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            width: 90%;
+            max-width: 400px;
+        }
+
+        .container h1 {
+            font-size: 2rem;
+            color: #ff6f91;
+        }
+
+        .container p {
+            font-size: 1rem;
+            margin: 20px 0;
+            color: #333;
+        }
+
+        .heart {
+            font-size: 3rem;
+            color: red;
+            animation: heartbeat 1.5s infinite;
+        }
+
+        @keyframes heartbeat {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.2);
+            }
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            font-size: 1rem;
+            color: white;
+            background: #ff6f91;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+            transition: background 0.3s;
+        }
+
+        .btn:hover {
+            background: #e05576;
+        }
+
+        .gif {
+            margin-top: 20px;
+        }
+
+        .gif img {
+            width: 100%;
+            max-width: 300px;
+            border-radius: 10px;
+        }
+
+        /* Media Query for Mobile Devices */
+        @media (max-width: 600px) {
+            .container h1 {
+                font-size: 1.8rem;
+            }
+
+            .container p {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Will You Give Us Another Chance? ❤️</h1>
+        <p>I know I made a mistake, and I regret letting something so small come between us. You mean the world to me, and I’m ready to do whatever it takes to make things right.</p>
+        <p class="heart">💓</p>
+        <div class="gif">
+            <img src="cat-love.gif" alt="Cat Love">
+        </div>
+        <a href="yes.html" class="btn">Yes</a>
+        <a href="no.html" class="btn">No</a>
+        <a href="maybe-later.html" class="btn">Maybe Later</a>
+    </div>
+</body>
+</html>

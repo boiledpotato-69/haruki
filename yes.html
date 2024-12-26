@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You! 🎉</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #ff7bb5, #fdb3d1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .container {
+            text-align: center;
+            background: #fff;
+            padding: 30px 50px;
+            border-radius: 20px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            position: relative;
+            z-index: 1;
+        }
+
+        .container h1 {
+            font-size: 2.5rem;
+            color: #ff6f91;
+            margin-bottom: 10px;
+        }
+
+        .container p {
+            font-size: 1.2rem;
+            margin: 20px 0;
+            color: #333;
+        }
+
+        .heart {
+            font-size: 4rem;
+            color: red;
+            animation: heartbeat 1.5s infinite;
+        }
+
+        @keyframes heartbeat {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.2);
+            }
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 25px;
+            font-size: 1.1rem;
+            color: white;
+            background: #ff6f91;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            text-decoration: none;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+            transition: background 0.3s, transform 0.3s;
+        }
+
+        .btn:hover {
+            background: #e05576;
+            transform: translateY(-3px);
+        }
+
+        .btn:active {
+            transform: translateY(1px);
+        }
+
+        .gif {
+            margin-top: 20px;
+        }
+
+        .gif img {
+            width: 300px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Thank You! ❤️</h1>
+        <p>I'm so grateful for your second chance. Let's make things right together!</p>
+        <p class="heart">💓</p>
+
+        <!-- GIF -->
+        <div class="gif">
+            <img src="te-amo-alexia.gif" alt="I Love You" width="300">
+        </div>
+
+        <a href="yumyum.html" class="btn">Next</a>
+    </div>
+
+    <!-- Confetti JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+
+    <script>
+        // Confetti effect triggered immediately upon page load
+        window.onload = function() {
+            confetti({
+                particleCount: 200,
+                spread: 90,
+                origin: { x: 0.5, y: 0.5 },
+                colors: ['#ff6f91', '#f9a8d4', '#fdb3d1', '#ffcbf5']
+            });
+        };
+    </script>
+
+</body>
+</html>
